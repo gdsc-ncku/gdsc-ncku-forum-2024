@@ -39,7 +39,7 @@ export default function Countdown() {
   }, []);
 
   return (
-    <span>
+    <span suppressHydrationWarning>
       {timeLeft.days} 天 {timeLeft.hours} 小時 {timeLeft.minutes} 分 {timeLeft.seconds} 秒
     </span>
   );
