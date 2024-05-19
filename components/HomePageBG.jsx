@@ -5,29 +5,29 @@ export default function HomePageBG() {
       <div></div>
       <div></div>
       <div></div>
-      <div className="bg-Red"></div>
-      <div className="bg-Red"></div>
+      <div className="slide-right-in bg-Red"></div>
+      <div className="slide-right-in bg-Red"></div>
 
-      <div className="bg-Blue"></div>
-      <div className="bg-Blue"></div>
-      <div className="bg-Blue"></div>
-      <div className="bg-Yellow"></div>
-      <div className="bg-Yellow"></div>
-      <div className="bg-Yellow"></div>
+      <div className="slide-up-in bg-Blue"></div>
+      <div className="slide-up-in bg-Blue"></div>
+      <div className="slide-up-in bg-Blue"></div>
+      <div className="slide-down-in bg-Yellow"></div>
+      <div className="slide-down-in bg-Yellow"></div>
+      <div className="slide-down-in bg-Yellow"></div>
 
-      <div className="bg-Blue"></div>
-      <div className="bg-Red"></div>
-      <div className="bg-Green"></div>
-      <div className="bg-Green"></div>
-      <div className="bg-Green"></div>
-      <div className="bg-Yellow"></div>
+      <div className="slide-up-in bg-Blue"></div>
+      <div className="slide-down-in bg-Red"></div>
+      <div className="slide-right-in bg-Green"></div>
+      <div className="slide-right-in bg-Green"></div>
+      <div className="slide-right-in bg-Green"></div>
+      <div className="slide-down-in bg-Yellow"></div>
 
-      <div className="bg-Blue"></div>
-      <div className="bg-Red"></div>
-      <div className="bg-Yellow"></div>
-      <div className="bg-Blue"></div>
-      <div className="bg-Red"></div>
-      <div className="bg-Red"></div>
+      <div className="slide-up-in bg-Blue"></div>
+      <div className="slide-down-in bg-Red"></div>
+      <div className="slide-up-in bg-Yellow"></div>
+      <div className="slide-left-in bg-Blue"></div>
+      <div className="slide-right-in bg-Red"></div>
+      <div className="slide-right-in bg-Red"></div>
     </div>
   );
 }

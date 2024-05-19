@@ -9,7 +9,7 @@ export default function Home() {
       <section id="home" className="relative min-h-screen">
         <NavBar />
         <HomePageBG />
-        <div className="absolute bottom-1/2 left-20 translate-y-1/2">
+        <div className="box-slide-left-in absolute bottom-1/2 left-20 translate-y-1/2">
           <div className="bg-[var(--background)] mb-5 border-4 border-black p-3 text-3xl font-bold leading-snug">
             GDSC NCKU FORUM<br />
             成大學生開發者論壇<br />
@@ -29,18 +29,19 @@ export default function Home() {
       </section>
 
       <section id="info" className="h-72 bg-Red">
+        活動資訊
       </section>
 
       <section id="agenda" className="h-72 bg-Yellow">
-
+        活動議程
       </section>
 
       <section id="projects" className="h-72 bg-Green">
-
+        專案發表
       </section>
 
       <section id="partners" className="h-72 bg-Blue">
-
+        合作夥伴
       </section>
 
       <footer className="bg-[#3C3C3C] text-[#F6F6F6]">
