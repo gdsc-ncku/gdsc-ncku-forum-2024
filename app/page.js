@@ -10,7 +10,7 @@ export default function Home() {
       <section id="home" className="relative min-h-screen">
         <NavBar />
         <HomePageBG />
-        <div className="title-box absolute bottom-1/2 mx-4 lg:left-20 translate-y-1/2">
+        <div className="title-box absolute bottom-1/2 mx-4 translate-y-1/2 lg:left-20">
           <div className="mb-5 border-4 border-black bg-White p-3 text-3xl font-bold leading-snug">
             GDSC NCKU FORUM<br />
             成大學生開發者論壇<br />
@@ -68,6 +68,19 @@ export default function Home() {
 
       <section id="partners" className="bg-Blue px-10 py-12 sm:px-20">
         <h1 className="section-title">合作夥伴</h1>
+        <p className="text-xl font-semibold text-White">贊助商</p>
+        <div className="mb-5 flex flex-wrap gap-10">
+        </div>
+        <p className="text-xl font-semibold text-White">社群攤位</p>
+        <div className="flex flex-wrap gap-10">
+          <a href="https://www.instagram.com/ncku.dmc" target="_blank" className="flex items-center justify-center"><Image src="/community/ncku_dmc_logo.png" alt="成大數位行銷社" width={100} height={100} /></a>
+          <a href="https://www.instagram.com/nckuctf/" target="_blank"><Image src="/community/ncku_ctf_logo.png" alt="成大資安社" width={100} height={100} /></a>
+          <a href="https://www.instagram.com/nckublockchainclub/" target="_blank"><Image src="/community/ncku_blockchain_club_logo.jpg" alt="成大區塊鏈社" width={100} height={100} /></a>
+          <a href="https://www.instagram.com/ncku_tricking/" target="_blank"><Image src="/community/ncku_tricking_logo.png" alt="成大 Tricking 社" width={100} height={100} /></a>
+          <a href="https://scist.org" target="_blank"><Image src="/community/SCIST_logo.png" alt="南臺灣學生資訊社群" width={100} height={100} /></a>
+          <a href="https://www.facebook.com/profile.php?id=61555579555321" target="_blank"><Image src="/community/foi_logo.jpg" alt="台灣不分系協會" width={100} height={100} /></a>
+          <a href="https://www.act.club.tw/" target="_blank"><Image src="/community/agile_tw_logo.png" alt="台灣敏捷協會" width={100} height={100} /></a>
+        </div>
       </section>
 
       <footer className="flex flex-col justify-between bg-[#1C1C1C] px-10 py-6 text-White sm:flex-row">

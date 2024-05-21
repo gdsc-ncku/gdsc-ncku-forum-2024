@@ -22,7 +22,7 @@ module.exports = {
         Red: "#ED5346",
         Yellow: "#F9AB00",
         Green: "#34A853",
-        Blue: "#8AB4F8",
+        Blue: "#528AD3",
       },
       keyframes: {
         "marquee": {
