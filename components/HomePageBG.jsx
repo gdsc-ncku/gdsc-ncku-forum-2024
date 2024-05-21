@@ -1,6 +1,6 @@
 export default function HomePageBG() {
   return (
-    <div className="grid h-screen w-full grid-cols-6 grid-rows-4 gap-0">
+    <div className="grid h-screen w-full grid-cols-6 grid-rows-4 gap-0 overflow-hidden">
       <div></div>
       <div></div>
       <div></div>
