@@ -13,14 +13,14 @@ export default function HomePageBG() {
       <div className="slide-up-in bg-Blue"></div>
       <div className="slide-down-in bg-Yellow"></div>
       <div className="slide-down-in bg-Yellow"></div>
-      <div className="slide-down-in bg-Yellow"></div>
+      <div className="slide-up-in bg-Yellow"></div>
 
       <div className="slide-up-in bg-Blue"></div>
       <div className="slide-down-in bg-Red"></div>
       <div className="slide-right-in bg-Green"></div>
       <div className="slide-right-in bg-Green"></div>
       <div className="slide-right-in bg-Green"></div>
-      <div className="slide-down-in bg-Yellow"></div>
+      <div className="slide-up-in bg-Yellow"></div>
 
       <div className="slide-up-in bg-Blue"></div>
       <div className="slide-down-in bg-Red"></div>
