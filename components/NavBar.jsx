@@ -2,10 +2,15 @@
 import Image from "next/image";
 import { useState, useEffect } from 'react';
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon, RocketLaunchIcon } from "@heroicons/react/24/solid";
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
+
+  const handleClick = (event) => {
+    event.preventDefault()
+    setOpen(!open);
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,18 +30,20 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div className="slide-up-in navbar fixed z-50 flex w-full items-center justify-between px-8 lg:px-12 py-4 transition-all">
+    <div className="slide-up-in navbar fixed z-50 flex w-full items-center justify-between px-8 py-4 transition-all lg:px-12">
       <a href="#home">
         <Image src="/logo.png" alt="2024 成大 Google 學生開發者論壇" width={120} height={48} />
       </a>
 
       {/* Desktop */}
-      <nav className="gap-16 hidden lg:flex">
+      <nav className="hidden gap-16 lg:flex">
         <a className="nav-item" href="#info">活動資訊</a>
         <a className="nav-item" href="#agenda">活動議程</a>
         <a className="nav-item" href="#projects">專案發表</a>
         <a className="nav-item" href="#partners">合作夥伴</a>
-        <a className="nav-item" href="https://forms.gle/FmESxj4Nv7MLmPeR8" target="_blank">立即報名</a>
+        <a className="nav-item" href="https://forms.gle/FmESxj4Nv7MLmPeR8" target="_blank">
+          <RocketLaunchIcon className="mr-1 inline size-5" />立即報名<RocketLaunchIcon className="ml-1 inline size-5" />
+        </a>
       </nav>
 
       {/* Mobile */}
@@ -45,7 +52,7 @@ export default function NavBar() {
           <SheetTrigger className="block">
             <Bars3Icon className="size-8" />
           </SheetTrigger>
-          <SheetContent className="flex w-40 flex-col items-end px-8 lg:px-12 py-4">
+          <SheetContent className="flex w-52 flex-col items-end px-8 py-4 lg:px-12">
             <SheetTrigger className="block">
               <XMarkIcon className="size-8" />
             </SheetTrigger>
@@ -54,7 +61,9 @@ export default function NavBar() {
               <a className="nav-item" href="#agenda">活動議程</a>
               <a className="nav-item" href="#projects">專案發表</a>
               <a className="nav-item" href="#partners">合作夥伴</a>
-              <a className="nav-item" href="https://forms.gle/FmESxj4Nv7MLmPeR8" target="_blank">立即報名</a>
+              <a className="nav-item" href="https://forms.gle/FmESxj4Nv7MLmPeR8" target="_blank">
+              <RocketLaunchIcon className="mr-1 inline size-5" />立即報名<RocketLaunchIcon className="ml-1 inline size-5" />
+              </a>
             </nav>
           </SheetContent>
         </Sheet>
