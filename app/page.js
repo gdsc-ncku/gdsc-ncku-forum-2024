@@ -2,8 +2,7 @@ import Image from "next/image";
 import NavBar from "@/components/NavBar";
 import HomePageBG from "@/components/HomePageBG";
 import Countdown from "@/components/Countdown";
-import { ChatBubbleLeftEllipsisIcon, SparklesIcon, GiftIcon } from '@heroicons/react/24/solid'
-
+import { GlobeAltIcon, ChatBubbleLeftEllipsisIcon, SparklesIcon, GiftIcon } from "@heroicons/react/24/solid";
 
 export default function Home() {
   return (
@@ -38,14 +37,14 @@ export default function Home() {
           </h3>
           <p>邀請眾多在資訊產業耕耘的專業人士，分享他們的寶貴經驗與洞察，促進學生對業界之認識。</p>
           <br />
-          <h3 className="flex items-center text-2xl font-bold leading-loose text-Blue">
+          <h3 className="flex items-center text-2xl font-bold leading-loose text-[#8FB7F8]">
             <SparklesIcon className="inline size-7" />
             <span className="mx-2">專案成果展示與發表會</span>
             <SparklesIcon className="inline size-7" />
           </h3>
           <p>今年度社團成員們共計進行了 9 組專案，主題包含 AI、Big data、Web、Unity......等。我們將藉由海報展攤位與簡報 Showcase，向會眾分享開發經驗與技術細節，並評選出大家心目中第一名的專案 🏆 </p>
           <br />
-          <h3 className="flex items-center text-2xl font-bold leading-loose text-Green">
+          <h3 className="flex items-center text-2xl font-bold leading-loose text-[#48C268]">
             <GiftIcon className="inline size-7" />
             <span className="mx-2">會眾好康</span>
             <GiftIcon className="inline size-7" />
@@ -55,8 +54,6 @@ export default function Home() {
             <li>社群攤位交流：與資安社、數位行銷社、區塊鏈社...等社群合作，擴展技術人脈～</li>
             <li>提供茶水與下午茶甜點：讓大家在緊湊的活動中，也能享受一下午的美好時光～</li>
           </ul>
-
-          {/* <Image src="/agenda.png" width={500} height={300} className="border border-black" /> */}
         </div>
       </section>
 
@@ -73,10 +70,40 @@ export default function Home() {
         <h1 className="section-title">合作夥伴</h1>
       </section>
 
-      <footer className="bg-[#3C3C3C] text-[#F6F6F6]">
-        <p>GDSC NCKU</p>
-        <p>聯絡我們</p>
-        <p>© 2024 成大 Google 學生開發者論壇</p>
+      <footer className="flex flex-col justify-between bg-[#1C1C1C] px-10 py-6 text-White sm:flex-row">
+        <div>
+          <ul className="mb-2 flex gap-4 text-White">
+            <li><a href="https://gdscncku.com" target="_blank"><GlobeAltIcon className="size-5" /></a></li>
+            <li>
+              <a href="https://www.facebook.com/gdscncku" target="_blank">
+                <Image src="/facebook.svg" alt="GDSC NCKU facebook" width={20} height={20} className="text-White" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/gdsc.ncku" target="_blank">
+                <Image src="/instagram.svg" alt="GDSC NCKU instagram" width={20} height={20} className="text-White" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@nckugdsc" target="_blank">
+              <Image src="/youtube.svg" alt="GDSC NCKU youtube" width={20} height={20} className="text-White" />
+              </a>
+            </li>
+            <li>
+              <a href="https://discord.gg/3AgWYcZXZm" target="_blank">
+                <Image src="/discord.svg" alt="GDSC NCKU discord" width={20} height={20} className="text-White" />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/gdsc-ncku" target="_blank">
+                <Image src="/github.svg" alt="GDSC NCKU github" width={20} height={20} className="text-White" />
+              </a>
+            </li>
+          </ul>
+          聯絡我們：<a href="mailto:GDSC.club@gs.ncku.edu.tw" className="underline">GDSC.club@gs.ncku.edu.tw</a>
+          <p className="mt-2">© 2024 成大 Google 學生開發者論壇</p>
+        </div>
+        <Image src="/logo-long.svg" alt="GDSC NCKU" width={400} height={200} className="mt-2" />
       </footer>
     </main>
   );
