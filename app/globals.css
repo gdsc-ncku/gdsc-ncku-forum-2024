@@ -26,40 +26,17 @@
 }
 
 @layer utilities {
-  .marquee {
-    position: relative;
-    width: 100vw;
-    max-width: 100%;
-    height: 36px;
-    overflow-x: hidden;
+  .title-box {
+    opacity: 0;
+    animation: title-box 1s ease-in-out 1.5s forwards;
   }
-
-  .track {
-    position: absolute;
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 16s linear infinite;
-  }
-
-  @keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-  }
-
-  .box-slide-left-in {
-    animation: box-slide-left-in 1s ease-out;
-  }
-  @keyframes box-slide-left-in {
-    from {
-      transform: translate(-500%, 50%);
-    }
-    to {
-      transform: translate(0, 50%);
-    }
+  @keyframes title-box {
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
 
   .slide-left-in {
-    animation: slide-left-in 1s ease-out;
+    animation: slide-left-in 1.5s ease-out;
   }
   @keyframes slide-left-in {
     from { transform: translateX(-500%); }
@@ -67,7 +44,7 @@
   }
 
   .slide-right-in {
-    animation: slide-right-in 1s ease-out;
+    animation: slide-right-in 1.5s ease-out;
   }
   @keyframes slide-right-in {
     from { transform: translateX(500%); }
@@ -75,7 +52,7 @@
   }
 
   .slide-up-in {
-    animation: slide-up-in 1s ease-out;
+    animation: slide-up-in 1.5s ease-out;
   }
   @keyframes slide-up-in {
     from { transform: translateY(-500%); }
@@ -83,7 +60,7 @@
   }
 
   .slide-down-in {
-    animation: slide-down-in 1s ease-out;
+    animation: slide-down-in 1.5s ease-out;
   }
   @keyframes slide-down-in {
     from { transform: translateY(500%); }
