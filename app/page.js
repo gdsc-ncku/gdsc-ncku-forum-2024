@@ -10,7 +10,7 @@ export default function Home() {
       <section id="home" className="relative min-h-screen">
         <NavBar />
         <HomePageBG />
-        <div className="title-box absolute bottom-1/2 left-20 translate-y-1/2">
+        <div className="title-box absolute bottom-1/2 mx-4 lg:left-20 translate-y-1/2">
           <div className="mb-5 border-4 border-black bg-White p-3 text-3xl font-bold leading-snug">
             GDSC NCKU FORUM<br />
             成大學生開發者論壇<br />
@@ -39,7 +39,7 @@ export default function Home() {
           <br />
           <h3 className="flex items-center text-2xl font-bold leading-loose text-[#8FB7F8]">
             <SparklesIcon className="inline size-7" />
-            <span className="mx-2">專案成果展示與發表會</span>
+            <span className="mx-2">專案成果展示</span>
             <SparklesIcon className="inline size-7" />
           </h3>
           <p>今年度社團成員們共計進行了 9 組專案，主題包含 AI、Big data、Web、Unity......等。我們將藉由海報展攤位與簡報 Showcase，向會眾分享開發經驗與技術細節，並評選出大家心目中第一名的專案 🏆 </p>
