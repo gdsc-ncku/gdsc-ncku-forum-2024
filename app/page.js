@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         <div className="absolute bottom-0 w-full bg-[#1C1C1C] p-2 text-3xl">
           <div class="box-border w-full overflow-hidden whitespace-nowrap">
-            <code className="inline-block animate-[marquee_10s_linear_infinite] pl-[100%] text-White">Code your goal, Fuel your soul！</code>
+            <code className="inline-block animate-[marquee_10s_linear_infinite] pl-[120%] text-White">Code your goal, Fuel your soul！</code>
           </div>
         </div>
       </section>
@@ -64,9 +64,9 @@ export default function Home() {
 
       </section>
 
-      <section id="projects" className="bg-Green px-10 py-12 sm:px-20">
+      <section id="projects" className="bg-Green px-10 py-12 sm:px-20 overflow-x-auto">
         <h1 className="section-title">專案發表</h1>
-        <div className="flex flex-wrap gap-5">
+        <div className="flex h-[600px] w-[2560px] flex-wrap gap-5">
           {projectData.map((project, index) => (
             <ProjectCard
               key={index}
@@ -83,49 +83,49 @@ export default function Home() {
 
       <section id="partners" className="bg-Blue px-10 py-12 sm:px-20">
         <h1 className="section-title">合作夥伴</h1>
-        <p className="text-xl font-semibold text-White">贊助商</p>
-        <div className="mb-5 flex flex-wrap gap-10">
+        <p className="mb-2 text-xl font-semibold text-White">贊助商</p>
+        <div className="mb-6 flex flex-wrap gap-10">
           <a href="https://www.falken.com.tw/hersheys/kisses/index/" target="_blank">
-            <Image src="/sponsors/HSY.png" alt="HERSHEY'S" width={100} height={100} />
+            <Image src="/sponsors/HSY.png" alt="HERSHEY'S" width={120} height={120} />
           </a>
           <a href="https://www.paolyta.com.tw/" target="_blank" className="flex items-center justify-center">
-            <Image src="/sponsors/保力達.jpg" alt="保力達" width={100} height={100} />
+            <Image src="/sponsors/保力達.jpg" alt="保力達" width={120} height={120} />
           </a>
           <a href="https://www.see-more.com.tw/" target="_blank">
-            <Image src="/sponsors/手目耳.png" alt="手目耳" width={100} height={100} />
+            <Image src="/sponsors/手目耳.png" alt="手目耳" width={120} height={120} />
           </a>
           <a href="https://www.mk2000.com.tw/" target="_blank">
-            <Image src="/sponsors/晨間廚房.png" alt="晨間廚房" width={100} height={100} />
+            <Image src="/sponsors/晨間廚房.png" alt="晨間廚房" width={120} height={120} />
           </a>
           <a href="https://www.lebledor.com/" target="_blank">
-            <Image src="/sponsors/金色三麥.png" alt="金色三麥" width={100} height={100} />
+            <Image src="/sponsors/金色三麥.png" alt="金色三麥" width={120} height={120} />
           </a>
           <a href="https://titansoft.com/tw" target="_blank">
-            <Image src="/sponsors/鈦坦.png" alt="鈦坦" width={100} height={100} />
+            <Image src="/sponsors/鈦坦.png" alt="鈦坦" width={120} height={120} />
           </a>
         </div>
-        <p className="text-xl font-semibold text-White">社群攤位</p>
+        <p className="mb-2 text-xl font-semibold text-White">社群攤位</p>
         <div className="flex flex-wrap gap-10">
           <a href="https://www.instagram.com/ncku.dmc" target="_blank" className="flex items-center justify-center">
-            <Image src="/community/ncku_dmc_logo.png" alt="成大數位行銷社" width={100} height={100} />
+            <Image src="/community/ncku_dmc_logo.png" alt="成大數位行銷社" width={120} height={120} />
           </a>
           <a href="https://www.instagram.com/nckuctf/" target="_blank">
-            <Image src="/community/ncku_ctf_logo.png" alt="成大資安社" width={100} height={100} />
+            <Image src="/community/ncku_ctf_logo.png" alt="成大資安社" width={120} height={120} />
           </a>
           <a href="https://www.instagram.com/nckublockchainclub/" target="_blank">
-            <Image src="/community/ncku_blockchain_club_logo.jpg" alt="成大區塊鏈社" width={100} height={100} />
+            <Image src="/community/ncku_blockchain_club_logo.jpg" alt="成大區塊鏈社" width={120} height={120} />
           </a>
           <a href="https://www.instagram.com/ncku_tricking/" target="_blank">
-            <Image src="/community/ncku_tricking_logo.png" alt="成大 Tricking 社" width={100} height={100} />
+            <Image src="/community/ncku_tricking_logo.png" alt="成大 Tricking 社" width={120} height={120} />
           </a>
           <a href="https://scist.org" target="_blank">
-            <Image src="/community/SCIST_logo.png" alt="南臺灣學生資訊社群" width={100} height={100} />
+            <Image src="/community/SCIST_logo.png" alt="南臺灣學生資訊社群" width={120} height={120} />
           </a>
           <a href="https://www.facebook.com/profile.php?id=61555579555321" target="_blank">
-            <Image src="/community/foi_logo.jpg" alt="台灣不分系協會" width={100} height={100} />
+            <Image src="/community/foi_logo.jpg" alt="台灣不分系協會" width={120} height={120} />
           </a>
           <a href="https://www.act.club.tw/" target="_blank">
-            <Image src="/community/agile_tw_logo.png" alt="台灣敏捷協會" width={100} height={100} />
+            <Image src="/community/agile_tw_logo.png" alt="台灣敏捷協會" width={120} height={120} />
           </a>
         </div>
       </section>
