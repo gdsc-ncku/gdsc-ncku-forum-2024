@@ -2,7 +2,9 @@ import Image from "next/image";
 import NavBar from "@/components/NavBar";
 import HomePageBG from "@/components/HomePageBG";
 import Countdown from "@/components/Countdown";
+import ProjectCard from "@/components/ProjectCard";
 import { GlobeAltIcon, ChatBubbleLeftEllipsisIcon, SparklesIcon, GiftIcon } from "@heroicons/react/24/solid";
+import projectData from "@/data/projectData";
 
 export default function Home() {
   return (
@@ -64,6 +66,19 @@ export default function Home() {
 
       <section id="projects" className="bg-Green px-10 py-12 sm:px-20">
         <h1 className="section-title">專案發表</h1>
+        <div className="flex flex-wrap gap-5">
+          {projectData.map((project, index) => (
+            <ProjectCard
+              key={index}
+              number={project.number}
+              team={project.team}
+              name={project.name}
+              description={project.description}
+              members={project.members}
+              membersPhotoLink={project.membersPhotoLink}
+            />
+          ))}
+        </div>
       </section>
 
       <section id="partners" className="bg-Blue px-10 py-12 sm:px-20">
