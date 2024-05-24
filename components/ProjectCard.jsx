@@ -7,11 +7,11 @@ import React from "react";
 export default function ProjectCard({number, team, name, description, members, membersPhotoLink}) {
   return (
     <Dialog>
-      <div className="relative block aspect-[5/3] h-72 border border-black bg-White p-5 transition-all duration-500 hover:scale-[102%]">
+      <div className="relative block aspect-[5/3] h-[calc(50%_-_10px)] border border-black bg-White p-5 transition-all duration-500 hover:scale-[102%]">
         <div className=" absolute right-5 border border-black p-1">{number}</div>
         <h3 className="text-xl">{team}</h3>
         <h3 className="text-xl font-extrabold">{name}</h3>
-        <p className="mt-3">
+        <p className="mt-3 text-xs sm:text-base">
           {description.length > 150
             ? description.substring(0, 150) + "......read more"
             : description}
@@ -26,6 +26,7 @@ export default function ProjectCard({number, team, name, description, members, m
         <div className="lg:w-3/5">
           <h3 className="text-lg font-bold text-Red">{team}</h3>
           <h3 className="text-2xl font-bold">{name}</h3>
+          <p>發表時間：</p>
           <p className="mt-4">{description}</p>
           <div className="mt-4 flex flex-wrap gap-5 text-sm">
             <div className="flex cursor-pointer items-center rounded-md border border-black p-2 ">

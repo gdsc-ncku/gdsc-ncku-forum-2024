@@ -27,44 +27,58 @@
 }
 
 @layer utilities {
-  .title-box {
-    opacity: 0;
-    animation: title-box 1s ease-in-out 1.5s forwards;
-  }
   @keyframes title-box {
     from { opacity: 0; }
     to { opacity: 1; }
   }
-
-  .slide-left-in {
-    animation: slide-left-in 1.5s ease-out;
+  .title-box {
+    opacity: 0;
+    animation: title-box 1s ease-in-out 1.5s forwards;
   }
+
   @keyframes slide-left-in {
     from { transform: translateX(-500%); }
     to { transform: translateX(0); }
   }
-
-  .slide-right-in {
-    animation: slide-right-in 1.5s ease-out;
+  .slide-left-in {
+    animation: slide-left-in 1.5s ease-out;
   }
+
   @keyframes slide-right-in {
     from { transform: translateX(500%); }
     to { transform: translateX(0); }
   }
-
-  .slide-up-in {
-    animation: slide-up-in 1.5s ease-out;
+  .slide-right-in {
+    animation: slide-right-in 1.5s ease-out;
   }
+
   @keyframes slide-up-in {
     from { transform: translateY(-500%); }
     to { transform: translateY(0); }
   }
-
-  .slide-down-in {
-    animation: slide-down-in 1.5s ease-out;
+  .slide-up-in {
+    animation: slide-up-in 1.5s ease-out;
   }
+
   @keyframes slide-down-in {
     from { transform: translateY(500%); }
     to { transform: translateY(0); }
+  }
+  .slide-down-in {
+    animation: slide-down-in 1.5s ease-out;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateX(-25%);
+      animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    50% {
+      transform: none;
+      animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+  }
+  .bounce-right {
+    animation: bounce 1s infinite;
   }
 }

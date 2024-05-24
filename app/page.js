@@ -3,7 +3,7 @@ import NavBar from "@/components/NavBar";
 import HomePageBG from "@/components/HomePageBG";
 import Countdown from "@/components/Countdown";
 import ProjectCard from "@/components/ProjectCard";
-import { GlobeAltIcon, ChatBubbleLeftEllipsisIcon, SparklesIcon, GiftIcon } from "@heroicons/react/24/solid";
+import { GlobeAltIcon, ChatBubbleLeftEllipsisIcon, SparklesIcon, GiftIcon, ChevronDoubleRightIcon } from "@heroicons/react/24/solid";
 import projectData from "@/data/projectData";
 
 export default function Home() {
@@ -64,9 +64,13 @@ export default function Home() {
 
       </section>
 
-      <section id="projects" className="bg-Green px-10 py-12 sm:px-20 overflow-x-auto">
-        <h1 className="section-title">專案發表</h1>
-        <div className="flex h-[600px] w-[2560px] flex-wrap gap-5">
+      <section id="projects" className="overflow-x-auto bg-Green px-10 py-12 sm:px-20">
+        <div className="mb-4 flex items-end">
+          <h1 className="section-title my-0">專案發表</h1>
+          <span className="mx-3 text-White">向右滾動查看更多專案</span>
+          <ChevronDoubleRightIcon className="bounce-right inline size-6 text-White" />
+        </div>
+        <div className="flex flex-col h-[500px] sm:h-[600px] gap-5 flex-wrap">
           {projectData.map((project, index) => (
             <ProjectCard
               key={index}
@@ -83,8 +87,10 @@ export default function Home() {
 
       <section id="partners" className="bg-Blue px-10 py-12 sm:px-20">
         <h1 className="section-title">合作夥伴</h1>
-        <p className="mb-2 text-xl font-semibold text-White">贊助商</p>
-        <div className="mb-6 flex flex-wrap gap-10">
+        <div className="mb-5 mt-6 flex justify-center border-b border-White pb-2 text-xl font-semibold text-White">
+          贊助商
+        </div>
+        <div className="mb-6 flex flex-wrap justify-center gap-10">
           <a href="https://www.falken.com.tw/hersheys/kisses/index/" target="_blank">
             <Image src="/sponsors/HSY.png" alt="HERSHEY'S" width={120} height={120} />
           </a>
@@ -104,8 +110,10 @@ export default function Home() {
             <Image src="/sponsors/鈦坦.png" alt="鈦坦" width={120} height={120} />
           </a>
         </div>
-        <p className="mb-2 text-xl font-semibold text-White">社群攤位</p>
-        <div className="flex flex-wrap gap-10">
+        <div className="mb-5 mt-10 flex justify-center border-b border-White pb-2 text-xl font-semibold text-White">
+          社群夥伴
+        </div>
+        <div className="flex flex-wrap justify-center gap-10">
           <a href="https://www.instagram.com/ncku.dmc" target="_blank" className="flex items-center justify-center">
             <Image src="/community/ncku_dmc_logo.png" alt="成大數位行銷社" width={120} height={120} />
           </a>
