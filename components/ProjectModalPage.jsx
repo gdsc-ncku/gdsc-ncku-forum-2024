@@ -8,7 +8,7 @@ export default function ProjectModalPage({number}) {
   const project = projectData.find((project) => project.number === number);
 
   return (
-    <DialogContent className="flex max-w-[80%] flex-col lg:flex-row">
+    <DialogContent className="flex max-h-[90%] max-w-[80%] flex-col overflow-auto lg:flex-row">
       <div className="lg:w-3/5">
         <h3 className="text-lg font-bold text-Red">{project.team}</h3>
         <h3 className="text-2xl font-bold">{project.name}</h3>
