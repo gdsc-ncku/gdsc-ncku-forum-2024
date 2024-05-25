@@ -26,11 +26,11 @@
   }
 
   .agenda-item {
-    @apply min-w-[130px] flex justify-center items-center border border-black bg-White font-semibold;
+    @apply min-h-20 flex justify-center items-center border border-black bg-White text-center font-semibold py-2;
   }
 
   .agenda-time {
-    @apply w-28 h-5 place-self-center flex justify-center items-center bg-White;
+    @apply lg:w-28 h-5 place-self-center flex justify-center items-center text-white text-center font-semibold;
   }
 }
 

@@ -13,12 +13,13 @@ export default function Home() {
         <NavBar />
         <HomePageBG />
         <div className="title-box absolute bottom-1/2 mx-4 translate-y-1/2 lg:left-20">
-          <div className="mb-5 border-4 border-black bg-White p-3 text-3xl font-bold leading-snug">
-            GDSC NCKU FORUM<br />
-            成大學生開發者論壇<br />
-            2024.06.08 (Sat.) 09:00-17:00
+          <div className="mb-5 border-4 border-black bg-White p-3 leading-snug">
+            <p className="text-4xl font-bold">GDSC NCKU FORUM</p>
+            <p className="text-4xl font-bold">成大學生開發者論壇</p>
+            <p className="text-xl">2024.06.08 (Sat.) 09:00-17:00</p>
+            <p className="text-xl">成功大學 光復校區 國際會議廳</p>
           </div>
-          <div className="border-4 border-black bg-White p-3 text-lg font-bold ">
+          <div className="border-4 border-black bg-White p-3 text-xl font-bold ">
             距離活動開始還有 <Countdown />
           </div>
         </div>
@@ -59,8 +60,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="agenda" className="bg-Yellow px-10 py-12 sm:px-20">
-        <h1 className="section-title">活動議程</h1>
+      <section id="agenda" className="overflow-x-auto bg-Yellow px-10 py-12 sm:px-20">
+        <div className="mb-4 flex items-end">
+          <h1 className="section-title my-0">活動議程</h1>
+          <span className="mx-3 text-White">向右滾動查看完整議程</span>
+          <ChevronDoubleRightIcon className="bounce-right inline size-6 text-White" />
+        </div>
         <AgendaTable />
       </section>
 

@@ -3,7 +3,7 @@ import SpeakerCard from "@/components/SpeakerCard";
 
 export default function AgendaTable() {
   return (
-    <div className="grid w-full grid-flow-col grid-cols-[13%_29%_29%_29%] grid-rows-9 gap-x-2 gap-y-4">
+    <div className="grid grid-flow-col grid-cols-[1fr_2fr_2fr_2fr] grid-rows-[auto_auto_auto_1fr_auto_auto_auto_auto_auto] gap-x-2 gap-y-4">
       <div></div>
       <div className="agenda-time">09:00 - 09:30</div>
       <div className="agenda-time">09:30 - 09:40</div>
