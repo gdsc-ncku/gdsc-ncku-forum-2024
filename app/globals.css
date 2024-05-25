@@ -24,6 +24,14 @@
   .section-title {
     @apply inline-block mb-4 text-2xl font-bold px-2 py-1 border-[1.5px] border-black bg-[var(--background)];
   }
+
+  .agenda-item {
+    @apply min-w-[130px] flex justify-center items-center border border-black bg-White font-semibold;
+  }
+
+  .agenda-time {
+    @apply w-28 h-5 place-self-center flex justify-center items-center bg-White;
+  }
 }
 
 @layer utilities {

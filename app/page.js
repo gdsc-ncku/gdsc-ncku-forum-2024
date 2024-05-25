@@ -3,8 +3,8 @@ import NavBar from "@/components/NavBar";
 import HomePageBG from "@/components/HomePageBG";
 import Countdown from "@/components/Countdown";
 import ProjectCard from "@/components/ProjectCard";
+import AgendaTable from "@/components/AgendaTable";
 import { GlobeAltIcon, ChatBubbleLeftEllipsisIcon, SparklesIcon, GiftIcon, ChevronDoubleRightIcon } from "@heroicons/react/24/solid";
-import projectData from "@/data/projectData";
 
 export default function Home() {
   return (
@@ -61,7 +61,7 @@ export default function Home() {
 
       <section id="agenda" className="bg-Yellow px-10 py-12 sm:px-20">
         <h1 className="section-title">活動議程</h1>
-
+        <AgendaTable />
       </section>
 
       <section id="projects" className="overflow-x-auto bg-Green px-10 py-12 sm:px-20">
@@ -70,18 +70,16 @@ export default function Home() {
           <span className="mx-3 text-White">向右滾動查看更多專案</span>
           <ChevronDoubleRightIcon className="bounce-right inline size-6 text-White" />
         </div>
-        <div className="flex flex-col h-[500px] sm:h-[600px] gap-5 flex-wrap">
-          {projectData.map((project, index) => (
-            <ProjectCard
-              key={index}
-              number={project.number}
-              team={project.team}
-              name={project.name}
-              description={project.description}
-              members={project.members}
-              membersPhotoLink={project.membersPhotoLink}
-            />
-          ))}
+        <div className="flex h-[500px] flex-col flex-wrap gap-5 sm:h-[600px]">
+          <ProjectCard number={1} />
+          <ProjectCard number={2} />
+          <ProjectCard number={3} />
+          <ProjectCard number={4} />
+          <ProjectCard number={5} />
+          <ProjectCard number={6} />
+          <ProjectCard number={7} />
+          <ProjectCard number={8} />
+          <ProjectCard number={9} />
         </div>
       </section>
 
