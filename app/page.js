@@ -71,7 +71,7 @@ export default function Home() {
           <span className="mx-3 text-sm text-White">向右滾動查看完整議程</span>
           <ChevronDoubleRightIcon className="bounce-right inline size-5 text-White" />
         </div>
-        <div className="overflow-x-auto px-10">
+        <div className="h-[810px] overflow-x-scroll px-10 sm:h-[900px]">
           <AgendaTable />
         </div>
       </section>
@@ -82,7 +82,7 @@ export default function Home() {
           <span className="mx-3 text-White">向右滾動查看更多專案</span>
           <ChevronDoubleRightIcon className="bounce-right inline size-6 text-White" />
         </div>
-        <div className="flex h-[500px] flex-col flex-wrap gap-5 overflow-x-auto pl-10 sm:h-[600px]">
+        <div className="flex h-[500px] flex-col flex-wrap gap-5 overflow-x-scroll pl-10 sm:h-[600px]">
           <ProjectCard number={1} />
           <ProjectCard number={2} />
           <ProjectCard number={3} />
