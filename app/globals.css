@@ -22,7 +22,7 @@
   }
 
   .section-title {
-    @apply inline-block mb-4 text-2xl font-bold px-2 py-1 border-[1.5px] border-black bg-[var(--background)];
+    @apply inline-block mb-4 text-lg sm:text-2xl font-bold px-2 py-1 border-[1.5px] border-black bg-[var(--background)];
   }
 
   .agenda-item {

@@ -68,8 +68,8 @@ export default function Home() {
       <section id="agenda" className="bg-Yellow py-12">
         <div className="mb-4 flex items-end px-10 sm:px-20">
           <h1 className="section-title my-0">活動議程</h1>
-          <span className="mx-3 text-White">向右滾動查看完整議程</span>
-          <ChevronDoubleRightIcon className="bounce-right inline size-6 text-White" />
+          <span className="mx-3 text-sm text-White">向右滾動查看完整議程</span>
+          <ChevronDoubleRightIcon className="bounce-right inline size-5 text-White" />
         </div>
         <div className="overflow-x-auto px-10">
           <AgendaTable />
