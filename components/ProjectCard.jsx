@@ -45,7 +45,7 @@ export default function ProjectCard({number}) {
           </div>
         </div>
         <div className="md:w-2/5">
-          <div className="my-5 h-[150px] w-[200px] sm:h-[300px] sm:w-[400px] bg-gray-300">
+          <div className="my-5 h-[150px] w-[200px] bg-gray-300 sm:h-[300px] sm:w-[400px]">
             <Image src={project.membersPhotoLink} alt="組照" width={400} height={300} />
           </div>
           <div className="text-lg font-bold">團隊成員</div>
