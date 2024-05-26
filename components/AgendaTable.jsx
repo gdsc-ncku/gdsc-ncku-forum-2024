@@ -1,9 +1,10 @@
 import projectData from "@/data/projectData";
 import SpeakerCard from "@/components/SpeakerCard";
+import DemoCard from "@/components/DemoCard";
 
 export default function AgendaTable() {
   return (
-    <div className="grid grid-flow-col grid-cols-[1fr_2fr_2fr_2fr] grid-rows-[auto_auto_auto_1fr_auto_auto_auto_auto_auto] gap-x-2 gap-y-4">
+    <div className="grid grid-flow-col grid-cols-[1fr_2fr_2fr_2fr] grid-rows-[auto_auto_auto_1fr_auto_auto_auto_auto_auto] gap-x-2 gap-y-5">
       <div></div>
       <div className="agenda-time">09:00 - 09:30</div>
       <div className="agenda-time">09:30 - 09:40</div>
@@ -21,7 +22,7 @@ export default function AgendaTable() {
       <SpeakerCard name="五倍學院 - 高見龍" />
       <SpeakerCard name="成大資訊系教授 - jserv" />
       <div className="agenda-item col-span-3">午休</div>
-      <div className="agenda-item">專案小組簡報 Showcase</div>
+      <DemoCard />
       <div className="agenda-item">頒獎 & 閉幕式</div>
 
       <div className="agenda-item w-36 justify-self-center rounded-full">B1 第二演講室</div>
@@ -33,8 +34,14 @@ export default function AgendaTable() {
       <div className="agenda-item">-</div>
 
       <div className="agenda-item w-36 justify-self-center rounded-full">1F 多功能廳</div>
-      <div className="agenda-item row-span-4">專案小組攤位展示 人氣投票</div>
-      <div className="agenda-item">專案小組攤位展示 人氣投票</div>
+      <div className="agenda-item row-span-4">
+        專案小組攤位展示/人氣投票<br />
+        社群攤位
+      </div>
+      <div className="agenda-item min-w-72">
+        專案小組攤位展示/人氣投票<br />
+        社群攤位
+      </div>
       <div className="agenda-item">-</div>
     </div>
   );

@@ -8,7 +8,7 @@ export default function SpeakerCard({name}) {
 
   return (
     <Dialog>
-      <DialogTrigger className="agenda-item min-w-72 justify-start px-3">
+      <DialogTrigger className="agenda-item min-w-72 justify-start px-3 hover:bg-gray-200">
         <div className="relative mr-2 flex size-16 shrink-0 overflow-hidden rounded-full">
           <Image src={speaker.photoLink} alt={speaker.name} width={200} height={200} />
         </div>
