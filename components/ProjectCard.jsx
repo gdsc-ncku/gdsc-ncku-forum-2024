@@ -23,8 +23,8 @@ export default function ProjectCard({number}) {
           <CursorArrowRaysIcon className=" inline size-6" />
         </DialogTrigger>
       </div>
-      <DialogContent className="flex max-h-[90%] max-w-[80%] flex-col overflow-auto lg:flex-row">
-        <div className="lg:w-3/5">
+      <DialogContent className="flex max-h-[90%] max-w-[80%] flex-col overflow-auto md:flex-row">
+        <div className="md:w-3/5">
           <h3 className="text-lg font-bold text-Red">{project.team}</h3>
           <h3 className="text-2xl font-bold">{project.name}</h3>
           <p><ClockIcon className="mr-1 inline size-5" />發表時間：{project.demoTime}</p>
@@ -44,8 +44,8 @@ export default function ProjectCard({number}) {
             </div>
           </div>
         </div>
-        <div>
-          <div className="my-5 h-[300px] w-[400px] bg-gray-300">
+        <div className="md:w-2/5">
+          <div className="my-5 h-[150px] w-[200px] sm:h-[300px] sm:w-[400px] bg-gray-300">
             <Image src={project.membersPhotoLink} alt="組照" width={400} height={300} />
           </div>
           <div className="text-lg font-bold">團隊成員</div>

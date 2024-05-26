@@ -20,11 +20,9 @@ export default function SpeakerCard({name}) {
       <DialogContent className="flex max-h-[90%] max-w-[80%] flex-col justify-between gap-10 overflow-auto sm:flex-row">
         <div className="sm:w-3/5">
           <h2 className="text-2xl font-bold">{speaker.agendaTitle}</h2>
-          <p className="my-3 flex items-center">
-            <ClockIcon className="mr-1 size-5" />
-            {speaker.agendaTime}
-            <MapPinIcon className="ml-2 mr-1 size-5" />
-            {speaker.agendaLocation}
+          <p className="my-3 flex flex-col md:flex-row md:items-center">
+            <p><ClockIcon className="inline mr-1 size-5" />{speaker.agendaTime}</p>
+            <p><MapPinIcon className="inline md:ml-2 mr-1 size-5" />{speaker.agendaLocation}</p>
           </p>
           <p dangerouslySetInnerHTML={{__html: speaker.agendaDesc}}></p>
         </div>
