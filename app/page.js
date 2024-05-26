@@ -4,7 +4,7 @@ import HomePageBG from "@/components/HomePageBG";
 import Countdown from "@/components/Countdown";
 import ProjectCard from "@/components/ProjectCard";
 import AgendaTable from "@/components/AgendaTable";
-import { GlobeAltIcon, ChatBubbleLeftEllipsisIcon, SparklesIcon, GiftIcon, ChevronDoubleRightIcon } from "@heroicons/react/24/solid";
+import { GlobeAltIcon, ChatBubbleLeftEllipsisIcon, SparklesIcon, GiftIcon, ChevronDoubleRightIcon, RocketLaunchIcon } from "@heroicons/react/24/solid";
 
 export default function Home() {
   return (
@@ -12,15 +12,20 @@ export default function Home() {
       <section id="home" className="relative min-h-screen">
         <NavBar />
         <HomePageBG />
-        <div className="title-box absolute bottom-1/2 mx-4 translate-y-1/2 lg:left-20">
+        <div className="title-box absolute bottom-1/2 mx-4 w-[380px] translate-y-1/2 sm:w-[440px] lg:left-20">
           <div className="mb-5 border-4 border-black bg-White p-3 leading-snug">
-            <p className="text-4xl font-bold">GDSC NCKU FORUM</p>
-            <p className="text-4xl font-bold">成大學生開發者論壇</p>
+            <p className="text-3xl font-bold sm:text-4xl">GDSC NCKU FORUM</p>
+            <p className="text-3xl font-bold sm:text-4xl">成大學生開發者論壇</p>
             <p className="text-xl">2024.06.08 (Sat.) 09:00-17:00</p>
             <p className="text-xl">成功大學 光復校區 國際會議廳</p>
           </div>
-          <div className="border-4 border-black bg-White p-3 text-xl font-bold ">
+          <div className="mb-7 border-4 border-black bg-White p-3 text-lg font-bold sm:text-xl ">
             距離活動開始還有 <Countdown />
+          </div>
+          <div>
+            <a className="bg-black p-4 text-White hover:bg-gray-800" href="https://forms.gle/FmESxj4Nv7MLmPeR8" target="_blank">
+              立即報名<RocketLaunchIcon className="ml-1 inline size-5" />
+            </a>
           </div>
         </div>
         <div className="absolute bottom-0 w-full bg-[#1C1C1C] p-2 text-3xl">
@@ -60,22 +65,24 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="agenda" className="overflow-x-auto bg-Yellow px-10 py-12 sm:px-20">
-        <div className="mb-4 flex items-end">
+      <section id="agenda" className="bg-Yellow py-12">
+        <div className="mb-4 flex items-end px-10 sm:px-20">
           <h1 className="section-title my-0">活動議程</h1>
           <span className="mx-3 text-White">向右滾動查看完整議程</span>
           <ChevronDoubleRightIcon className="bounce-right inline size-6 text-White" />
         </div>
-        <AgendaTable />
+        <div className="overflow-x-auto pl-10">
+          <AgendaTable />
+        </div>
       </section>
 
-      <section id="projects" className="overflow-x-auto bg-Green px-10 py-12 sm:px-20">
-        <div className="mb-4 flex items-end">
+      <section id="projects" className="bg-Green py-12">
+        <div className="mb-4 flex items-end px-10 sm:px-20">
           <h1 className="section-title my-0">專案發表</h1>
           <span className="mx-3 text-White">向右滾動查看更多專案</span>
           <ChevronDoubleRightIcon className="bounce-right inline size-6 text-White" />
         </div>
-        <div className="flex h-[500px] flex-col flex-wrap gap-5 sm:h-[600px]">
+        <div className="flex h-[500px] flex-col flex-wrap gap-5 overflow-x-auto pl-10 sm:h-[600px]">
           <ProjectCard number={1} />
           <ProjectCard number={2} />
           <ProjectCard number={3} />

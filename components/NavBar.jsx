@@ -37,11 +37,11 @@ export default function NavBar() {
 
       {/* Desktop */}
       <nav className="hidden gap-16 lg:flex">
-        <a className="nav-item" href="#info">活動資訊</a>
-        <a className="nav-item" href="#agenda">活動議程</a>
-        <a className="nav-item" href="#projects">專案發表</a>
-        <a className="nav-item" href="#partners">合作夥伴</a>
-        <a className="nav-item" href="https://forms.gle/FmESxj4Nv7MLmPeR8" target="_blank">
+        <a className="nav-item hover:bg-gray-200" href="#info">活動資訊</a>
+        <a className="nav-item hover:bg-gray-200" href="#agenda">活動議程</a>
+        <a className="nav-item hover:bg-gray-200" href="#projects">專案發表</a>
+        <a className="nav-item hover:bg-gray-200" href="#partners">合作夥伴</a>
+        <a className="nav-item hover:bg-gray-200" href="https://forms.gle/FmESxj4Nv7MLmPeR8" target="_blank">
           <RocketLaunchIcon className="mr-1 inline size-5" />立即報名<RocketLaunchIcon className="ml-1 inline size-5" />
         </a>
       </nav>

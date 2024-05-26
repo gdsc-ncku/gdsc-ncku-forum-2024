@@ -26,7 +26,7 @@
   }
 
   .agenda-item {
-    @apply min-h-20 flex justify-center items-center border border-black bg-White text-center font-semibold py-2;
+    @apply min-h-16 flex justify-center items-center border border-black bg-White text-center font-semibold py-2;
   }
 
   .agenda-time {
