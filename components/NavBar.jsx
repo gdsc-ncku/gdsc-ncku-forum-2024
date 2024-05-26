@@ -30,7 +30,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div className="slide-up-in navbar fixed z-50 flex w-full items-center justify-between px-8 py-4 transition-all lg:px-12">
+    <div className="slide-up-in navbar fixed z-50 flex w-full items-center justify-between px-8 py-2 transition-all lg:px-12">
       <a href="#home">
         <Image src="/logo.png" alt="2024 成大 Google 學生開發者論壇" width={120} height={48} />
       </a>

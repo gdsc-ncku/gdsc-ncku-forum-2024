@@ -35,7 +35,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="info" className="gap-4 bg-Red px-10 py-12 sm:px-20">
+      <section id="info" className="gap-4 bg-Red px-10 py-14 sm:px-20">
         <h1 className="section-title">活動資訊</h1>
         <div className="text-lg text-White">
           <h3 className="flex items-center text-2xl font-bold leading-loose text-[#FFC74B]">
@@ -65,7 +65,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="agenda" className="bg-Yellow py-12">
+      <section id="agenda" className="bg-Yellow py-14">
         <div className="mb-4 flex items-end px-10 sm:px-20">
           <h1 className="section-title my-0">活動議程</h1>
           <span className="mx-3 text-sm text-White">向右滾動查看完整議程</span>
@@ -76,7 +76,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projects" className="bg-Green py-12">
+      <section id="projects" className="bg-Green py-14">
         <div className="mb-4 flex items-end px-10 sm:px-20">
           <h1 className="section-title my-0">專案發表</h1>
           <span className="mx-3 text-White">向右滾動查看更多專案</span>
@@ -95,7 +95,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="partners" className="bg-Blue px-10 py-12 sm:px-20">
+      <section id="partners" className="bg-Blue px-10 py-14 sm:px-20">
         <h1 className="section-title">合作夥伴</h1>
         <div className="mb-5 mt-6 flex justify-center border-b border-White pb-2 text-xl font-semibold text-White">
           贊助商
