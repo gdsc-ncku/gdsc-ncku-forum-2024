@@ -4,7 +4,8 @@ import HomePageBG from "@/components/HomePageBG";
 import Countdown from "@/components/Countdown";
 import ProjectCard from "@/components/ProjectCard";
 import AgendaTable from "@/components/AgendaTable";
-import { GlobeAltIcon, ChatBubbleLeftEllipsisIcon, SparklesIcon, GiftIcon, ChevronDoubleRightIcon, RocketLaunchIcon } from "@heroicons/react/24/solid";
+import { GlobeAltIcon, ChatBubbleLeftEllipsisIcon, SparklesIcon, GiftIcon, ChevronDoubleRightIcon, RocketLaunchIcon, TruckIcon, MapIcon } from "@heroicons/react/24/solid";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 
 export default function Home() {
   return (
@@ -22,10 +23,35 @@ export default function Home() {
           <div className="mb-7 border-4 border-black bg-White p-3 text-base font-bold sm:text-xl ">
             距離活動開始還有 <Countdown />
           </div>
-          <div>
-            <a className="bg-black p-4 text-White hover:bg-gray-800" href="https://forms.gle/FmESxj4Nv7MLmPeR8" target="_blank">
-              立即報名<RocketLaunchIcon className="ml-1 inline size-5" />
+          <div className=" flex flex-col gap-5 sm:flex-row">
+            <a className="nav-item w-36 bg-black p-2 text-lg text-White hover:bg-gray-800" href="https://forms.gle/FmESxj4Nv7MLmPeR8" target="_blank">
+              <RocketLaunchIcon className="mr-1 inline size-5" />立即報名
             </a>
+            <Dialog>
+              <DialogTrigger className="nav-item w-36 p-2 text-lg hover:bg-gray-300 sm:w-40">
+                <MapIcon className="mr-1 inline size-6" />展場攤位圖
+              </DialogTrigger>
+              <DialogContent className="max-h-[90%] max-w-[80%] overflow-scroll">
+                🚧 製作中 🚧
+              </DialogContent>
+            </Dialog>
+            <Dialog>
+              <DialogTrigger className="nav-item w-36 p-2 text-lg hover:bg-gray-300">
+                <TruckIcon className="mr-1 inline size-6" />交通路線
+              </DialogTrigger>
+              <DialogContent className="max-h-[90%] max-w-[80%] overflow-scroll">
+                <Image src="/map.png" alt="地圖" width={500} height={300} />
+                <h2 className="text-xl font-bold">搭乘高鐵</h2>
+                <p>搭乘高鐵至台南站，轉搭乘臺鐵沙崙線至臺南火車站下車，自後站出口至大學路西段，步行二百公尺後，左側即為光復校區前門，進入校區後，依指標至國立成功大學國際會議廳。</p>
+                <h2 className="text-xl font-bold">搭乘台鐵</h2>
+                <p>於臺南火車站下車，自後站出口至大學路西段，步行二百公尺後，左側即為光復校區前門，進入校區後，依指標至國立成功大學國際會議廳。</p>
+                <h2 className="text-xl font-bold">自行開車</h2>
+                <h3 className="text-lg font-semibold">1.車行南下：</h3>
+                <p>國道一號下大灣交流道（324公里處），下交流道後沿高速二街直行至復興路右轉，沿復興路直行續接小東路，左轉勝利路，右轉大學路西段，左轉由光復校區前門進入，停車於校園內。依指標至國立成功大學國際會議廳。</p>
+                <h3 className="text-lg font-semibold">2.車行北上：</h3>
+                <p>國道一號下仁德交流道（327A裕農路）方向，沿高速一街一段直行，續至高速一街二段，於復興路左轉，沿復興路直行續接小東路，左轉勝利路，右轉大學路西段，左轉由光復校區前門進入，停車於校園內。依指標至國立成功大學國際會議廳。</p>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
         <div className="absolute bottom-0 w-full bg-[#1C1C1C] p-2 text-3xl">

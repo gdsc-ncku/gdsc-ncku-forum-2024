@@ -18,7 +18,7 @@
 
 @layer components {
   .nav-item {
-    @apply px-2 py-1 border-[1.5px] border-black bg-[var(--background)];
+    @apply px-2 py-1 border-[1.5px] border-black bg-[var(--background)] flex justify-center items-center;
   }
 
   .section-title {
