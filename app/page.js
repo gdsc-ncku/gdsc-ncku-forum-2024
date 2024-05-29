@@ -56,7 +56,7 @@ export default function Home() {
         </div>
         <div className="absolute bottom-0 w-full bg-[#1C1C1C] p-2 text-3xl">
           <div class="box-border w-full overflow-hidden whitespace-nowrap">
-            <code className="inline-block animate-[marquee_10s_linear_infinite] pl-[120%] text-White">Code your goal, Fuel your soul！</code>
+            <code className="inline-block animate-[marquee_10s_linear_infinite] pl-[120%] text-White">Code to goal, Fuel your soul！</code>
           </div>
         </div>
       </section>
