@@ -24,19 +24,19 @@ export default function Home() {
             距離活動開始還有 <Countdown />
           </div>
           <div className=" flex flex-col gap-5 sm:flex-row">
-            <a className="nav-item w-36 bg-black p-2 text-lg text-White hover:bg-gray-800" href="https://forms.gle/FmESxj4Nv7MLmPeR8" target="_blank">
+            <a className="nav-item w-36 bg-black text-lg text-White hover:bg-gray-800" href="https://forms.gle/FmESxj4Nv7MLmPeR8" target="_blank">
               <RocketLaunchIcon className="mr-1 inline size-5" />立即報名
             </a>
             <Dialog>
-              <DialogTrigger className="nav-item w-36 p-2 text-lg hover:bg-gray-300 sm:w-40">
-                <MapIcon className="mr-1 inline size-6" />展場攤位圖
+              <DialogTrigger className="nav-item w-36 text-lg hover:bg-gray-300 sm:w-40">
+                <MapIcon className="mr-1 inline size-6" />展場地圖
               </DialogTrigger>
               <DialogContent className="max-h-[90%] max-w-[80%] overflow-scroll">
                 🚧 製作中 🚧
               </DialogContent>
             </Dialog>
             <Dialog>
-              <DialogTrigger className="nav-item w-36 p-2 text-lg hover:bg-gray-300">
+              <DialogTrigger className="nav-item w-36 text-lg hover:bg-gray-300">
                 <TruckIcon className="mr-1 inline size-6" />交通路線
               </DialogTrigger>
               <DialogContent className="max-h-[90%] max-w-[80%] overflow-scroll">
