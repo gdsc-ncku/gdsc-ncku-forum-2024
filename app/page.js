@@ -94,7 +94,7 @@ export default function Home() {
       <section id="agenda" className="bg-Yellow py-14">
         <div className="mb-4 flex items-end px-10 sm:px-20">
           <h1 className="section-title my-0">活動議程</h1>
-          <span className="mx-3 text-sm text-White">向右滾動查看完整議程</span>
+          <span className="mx-3 text-sm text-White">向左滾動查看完整議程</span>
           <ChevronDoubleRightIcon className="bounce-right inline size-5 text-White" />
         </div>
         <div className="h-[820px] overflow-x-scroll px-10 sm:h-[900px]">
@@ -105,7 +105,7 @@ export default function Home() {
       <section id="projects" className="bg-Green py-14">
         <div className="mb-4 flex items-end px-10 sm:px-20">
           <h1 className="section-title my-0">專案發表</h1>
-          <span className="mx-3 text-sm text-White">向右滾動查看更多專案</span>
+          <span className="mx-3 text-sm text-White">向左滾動查看更多專案</span>
           <ChevronDoubleRightIcon className="bounce-right inline size-5 text-White" />
         </div>
         <div className="flex h-[500px] flex-col flex-wrap gap-5 overflow-x-scroll pl-10 sm:h-[600px]">
