@@ -32,6 +32,7 @@ export default function Home() {
                 <MapIcon className="mr-1 inline size-6" />展場地圖
               </DialogTrigger>
               <DialogContent className="max-h-[90%] max-w-[80%] overflow-scroll">
+                <a className="underline" href="/site_map.png" download>點此下載</a>
                 <Image src="/site_map.png" alt="地圖" width={500} height={400} />
               </DialogContent>
             </Dialog>
