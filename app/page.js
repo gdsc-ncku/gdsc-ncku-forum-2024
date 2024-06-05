@@ -206,7 +206,7 @@ export default function Home() {
             </li>
           </ul>
           聯絡我們：<a href="mailto:GDSC.club@gs.ncku.edu.tw" className="underline">GDSC.club@gs.ncku.edu.tw</a>
-          <p className="mt-2">© 2024 成大 Google 學生開發者論壇</p>
+          <p className="mt-2">© 2024 成大 GDSC 學生開發者論壇</p>
         </div>
         <Image src="/logo-long.svg" alt="GDSC NCKU" width={400} height={200} className="mt-2" />
       </footer>
