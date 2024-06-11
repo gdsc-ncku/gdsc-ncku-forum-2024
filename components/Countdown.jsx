@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 
 export default function Countdown() {
+  /**
   const calculateTimeLeft = () => {
     const target = new Date('Jun 8 2024 9:00:00 GMT+0800 (Taipei Standard Time)');
     const now = new Date();
@@ -37,10 +38,11 @@ export default function Countdown() {
 
     return () => clearInterval(timer);
   }, []);
+  */
 
   return (
     <span suppressHydrationWarning>
-      {timeLeft.days} 天 {timeLeft.hours} 小時 {timeLeft.minutes} 分 {timeLeft.seconds} 秒
+      0 天 0 小時 0 分 0 秒
     </span>
   );
 };

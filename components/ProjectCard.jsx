@@ -37,21 +37,24 @@ export default function ProjectCard({number}) {
         </section>
         <section>
           <h3 className="text-lg font-bold">
-            海報
-            <a href={project.posterLink} download>
-              <DocumentArrowDownIcon className="ml-1 inline size-5" />
-            </a>
-            <a href={project.posterLink} target="_blank">
+            簡報
+            <a href={project.slideLink} target="_blank">
               <ArrowTopRightOnSquareIcon className="ml-1 inline size-5" />
             </a>
           </h3>
-          <Image src={project.posterLink} alt="專題海報" width={594} height={841} />
+          <iframe src={project.slideLink} className="w-full aspect-[16/11]"></iframe>
         </section>
         <section>
           <h3 className="text-lg font-bold">
-            簡報
+            海報
+            <a href={project.posterLink} target="_blank">
+              <ArrowTopRightOnSquareIcon className="ml-1 inline size-5" />
+            </a>
+            <a href={project.posterLink} download>
+              <DocumentArrowDownIcon className="ml-1 inline size-5" />
+            </a>
           </h3>
-          🚧 待更新 🚧
+          <Image src={project.posterLink} alt="專題海報" width={594} height={841} />
         </section>
         <section>
           <h3 className="text-lg font-bold">
