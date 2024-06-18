@@ -60,7 +60,8 @@ export default function ProjectCard({number}) {
           <h3 className="text-lg font-bold">
             Demo 影片
           </h3>
-          🚧 待更新 🚧
+          {(project.videoLink === "") ? (<p>此組別無影片</p>) : (<></>)}
+          <iframe className="w-full aspect-video" src={project.videoLink} title="【2024 成大 GDSC 學生開發者論壇】YEGO" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
       </DialogContent>
     </Dialog>
