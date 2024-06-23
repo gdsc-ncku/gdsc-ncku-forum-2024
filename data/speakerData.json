@@ -6,7 +6,8 @@
     "agendaTitle": "從 Instagram 工程師離職，找尋最好的自己！",
     "agendaDesc": "面對職涯規劃應該具備什麼樣的思維以及準備？<br />▻ 20's 職涯選擇，成為一位 ios 語言軟體工程師必備專業技能以及心態<br />▻ 自律等於自由，為什麼選擇 30 歲離職追求更好的自己<br />▻ 從 #受僱者到自僱者 生活最大差異以及收穫",
     "agendaTime": "09:40 - 10:20",
-    "agendaLocation": "B1 第一演講室"
+    "agendaLocation": "B1 第一演講室",
+    "videoLink": "https://www.youtube.com/embed/yPhu98N3tK4"
   },
   {
     "name": "五倍學院 - 高見龍",
@@ -15,7 +16,8 @@
     "agendaTitle": "AI 時代的程式語言學習法",
     "agendaDesc": "▻ 善用 AI 工具建立 SSOT<br />▻ 將知識刻進大腦裡！<br />▻ 軟體工程師的職涯發展",
     "agendaTime": "10:30 - 11:10",
-    "agendaLocation": "B1 第一演講室"
+    "agendaLocation": "B1 第一演講室",
+    "videoLink": "https://www.youtube.com/embed/dW072_tS2cs"
   },
   {
     "name": "Line 前總經理 - 陶韻智",
@@ -24,7 +26,8 @@
     "agendaTitle": "創新創業，軟體創業，台灣出發，打向全球，需要勇於做夢的你！",
     "agendaDesc": "LINE是一個韓國人打軟體世界盃成功的夢想故事，近期台灣也有 Whoscall, Appier, The News Lens等打入國際市場的全球性軟體新創，有為者亦若是。<br /><br />台灣不只能把高科技製造做好，透過這個短講，講者想要種下更多台灣年輕人願意打軟體世界杯的種子，激發一些台灣年輕人起而行動，挑戰台灣以外的全球性軟體市場。<br /><br />短講中會快速談到每個人都可學習使用的軟體創新創業方法論，想制霸世界千萬不要錯過這個短講！",
     "agendaTime": "10:30 - 11:10",
-    "agendaLocation": "B1 第二演講室"
+    "agendaLocation": "B1 第二演講室",
+    "videoLink": ""
   },
   {
     "name": "成大資訊系教授 - jserv",
@@ -33,7 +36,8 @@
     "agendaTitle": "透過 Linux 核心重新認識數位化世界",
     "agendaDesc": "經過數十年發展和資訊科技產業的推波助瀾，電腦科學涵蓋電腦網路、圖形處理、抽象機器及理論 (如 Turing machine)、NP-Complete 問題、計算機架構、排序演算法、資料壓縮、現代密碼學、形式化方法、作業系統排程、異質多核運算、編譯器，和程式語言等面向，而 Linux核心幾乎充分涵蓋前述電腦科學的子學科。<br /><br />換言之，Linux 核心已不只是個「核心」，應看待為資訊科技的「基礎建設」，本議程引導學員從Linux 核心重新理解電腦科學建構的數位化世界。",
     "agendaTime": "11:20 - 12:00",
-    "agendaLocation": "B1 第一演講室"
+    "agendaLocation": "B1 第一演講室",
+    "videoLink": "https://www.youtube.com/embed/osIGIzFRSeI"
   },
   {
     "name": "生成式藝術家 - 吳哲宇",
@@ -42,6 +46,7 @@
     "agendaTitle": "生成式演算互動藝術概覽- 創造有生命的數位藝術",
     "agendaDesc": "▻ 踏入生成式藝術與互動的世界<br />▻ 互動程式創作 Creative Coding 介紹<br />▻ 演算法與資料 - 創造數位的物件與生命<br />▻ 破除媒介框架 - 創造多元感官藝術 -互動機制與體驗多元性<br />▻ 生成式數位藝術對於品牌、商業、藝術未來影響力實踐<br />▻ 從創作到數位藝術製作實作案例講解<br />▻ 商業合作與藝術結合的經驗分享",
     "agendaTime": "11:20 - 12:00",
-    "agendaLocation": "B1 第二演講室"
+    "agendaLocation": "B1 第二演講室",
+    "videoLink": "https://www.youtube.com/embed/STc1XWZMmDM"
   }
 ]

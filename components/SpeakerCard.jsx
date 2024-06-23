@@ -25,6 +25,13 @@ export default function SpeakerCard({name}) {
             <p><MapPinIcon className="mr-1 inline size-5 md:ml-2" />{speaker.agendaLocation}</p>
           </p>
           <p dangerouslySetInnerHTML={{__html: speaker.agendaDesc}}></p>
+          <section>
+            <h3 className="mt-5 text-lg font-bold">
+              講座錄影
+            </h3>
+            {(speaker.videoLink === "") ? (<p>此議程無影片</p>) : (<></>)}
+            <iframe className="aspect-video w-full" src={speaker.videoLink} frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
         </div>
         <div className="sm:w-2/5">
           <Image src={speaker.photoLink} alt={speaker.name} width={200} height={200} />

@@ -42,7 +42,7 @@ export default function ProjectCard({number}) {
               <ArrowTopRightOnSquareIcon className="ml-1 inline size-5" />
             </a>
           </h3>
-          <iframe src={project.slideLink} className="w-full aspect-[16/11]"></iframe>
+          <iframe src={project.slideLink} className="aspect-[16/11] w-full"></iframe>
         </section>
         <section>
           <h3 className="text-lg font-bold">
@@ -61,7 +61,7 @@ export default function ProjectCard({number}) {
             Demo 影片
           </h3>
           {(project.videoLink === "") ? (<p>此組別無影片</p>) : (<></>)}
-          <iframe className="w-full aspect-video" src={project.videoLink} title="【2024 成大 GDSC 學生開發者論壇】YEGO" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe className="aspect-video w-full" src={project.videoLink} frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
       </DialogContent>
     </Dialog>
