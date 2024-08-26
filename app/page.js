@@ -11,6 +11,7 @@ import {
   GiftIcon,
   ChevronDoubleRightIcon,
   RocketLaunchIcon,
+  CameraIcon,
   VideoCameraIcon,
   TruckIcon,
   MapIcon,
@@ -34,16 +35,8 @@ export default function Home() {
             距離活動開始還有 <Countdown />
           </div>
           <div className="flex flex-col flex-wrap gap-5 sm:flex-row">
-            <a
-              className="nav-item w-36 bg-black text-lg text-White hover:bg-gray-800"
-              href="https://forms.gle/FmESxj4Nv7MLmPeR8"
-              target="_blank"
-            >
-              <RocketLaunchIcon className="mr-1 inline size-5" />
-              立即報名
-            </a>
             <Dialog>
-              <DialogTrigger className="nav-item w-36 text-lg hover:bg-gray-300 sm:w-40">
+              <DialogTrigger className="nav-item w-36 text-lg hover:bg-gray-300">
                 <MapIcon className="mr-1 inline size-6" />
                 展場地圖
               </DialogTrigger>
@@ -92,6 +85,14 @@ export default function Home() {
             >
               <VideoCameraIcon className="mr-1 inline size-5" />
               回顧影片
+            </a>
+            <a
+              className="nav-item w-36 text-lg hover:bg-gray-300"
+              href="https://photos.app.goo.gl/EsyeeguECkR4TsjQ8"
+              target="_blank"
+            >
+              <CameraIcon className="mr-1 inline size-5" />
+              活動照片
             </a>
           </div>
         </div>
